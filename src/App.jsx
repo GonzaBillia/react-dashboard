@@ -29,17 +29,17 @@ function app() {
           <main className='content'>
             <Topbar />
             <Routes>
-              <Route path='/proyecto-admin-react' element={<Dashboard />} />
-              <Route path='/proyecto-admin-react/team' element={<Team />} />
-              <Route path='/proyecto-admin-react/contacts' element={<Contacts />} />
-              <Route path='/proyecto-admin-react/invoices' element={<Invoices />} />
-              <Route path='/proyecto-admin-react/form' element={<Form />} />
-              <Route path='/proyecto-admin-react/calendar' element={<MyCalendar />} />
-              <Route path='/proyecto-admin-react/faq' element={<FAQ />} />
-              <Route path='/proyecto-admin-react/bar' element={<Bar />} />
-              <Route path='/proyecto-admin-react/pie' element={<Pie />} />
-              <Route path='/proyecto-admin-react/line' element={<Line />} />
-              <Route path='/proyecto-admin-react/geography' element={<Geography />} />
+              <Route path='/react-dashboard' element={<Dashboard />} />
+              <Route path='/react-dashboard/team' element={<Team />} />
+              <Route path='/react-dashboard/contacts' element={<Contacts />} />
+              <Route path='/react-dashboard/invoices' element={<Invoices />} />
+              <Route path='/react-dashboard/form' element={<Form />} />
+              <Route path='/react-dashboard/calendar' element={<MyCalendar />} />
+              <Route path='/react-dashboard/faq' element={<FAQ />} />
+              <Route path='/react-dashboard/bar' element={<Bar />} />
+              <Route path='/react-dashboard/pie' element={<Pie />} />
+              <Route path='/react-dashboard/line' element={<Line />} />
+              <Route path='/react-dashboard/geography' element={<Geography />} />
             </Routes> 
           </main>
         </div>
