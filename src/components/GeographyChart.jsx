@@ -5,7 +5,7 @@ import { useTheme } from '@mui/material'
 import {geoFeatures } from '../data/mockGeoFeatures'
 import { mockGeographyData as data } from '../data/mockData'
 
-const GeographyChart = ( isDashboard = false ) => {
+const GeographyChart = ( {isDashboard = false} ) => {
     const theme = useTheme()
     const colors = tokens(theme.palette.mode)
     return (
@@ -45,13 +45,13 @@ const GeographyChart = ( isDashboard = false ) => {
             unknownColor="#666666"
             label="properties.name"
             valueFormat=".2s"
-            projectionScale={isDashboard ? 150 : 40}
-            projectionTranslation={isDashboard ? [ 0.5, 0.5 ] : [ 0.49, 0.6 ]}
+            projectionScale={!isDashboard ? 150 : 40}
+            projectionTranslation={!isDashboard ? [ 0.5, 0.5 ] : [ 0.49, 0.6 ]}
             projectionRotation={[ 0, 0, 0 ]}
             borderWidth={1.5}
             borderColor="#ffffff"
             legends={
-                isDashboard ? [{
+                !isDashboard ? [{
                     anchor: 'bottom-left',
                     direction: 'column',
                     justify: true,
