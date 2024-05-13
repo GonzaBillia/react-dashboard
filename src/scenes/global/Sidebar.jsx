@@ -112,7 +112,7 @@ const Sidebar = () => {
                     <Box paddingLeft={isCollapsed ? undefined : '10%'}>
                         <Item
                             title='Dashboard'
-                            to='/'
+                            to='/proyecto-admin-react'
                             icon={<HomeOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
@@ -122,21 +122,21 @@ const Sidebar = () => {
                         </Typography>
                         <Item
                             title='Team'
-                            to='/team'
+                            to='/proyecto-admin-react/team'
                             icon={<PeopleOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item
                             title='Contacts Information'
-                            to='/contacts'
+                            to='/proyecto-admin-react/contacts'
                             icon={<ContactsOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item
                             title='Invoices Balances'
-                            to='/invoices'
+                            to='/proyecto-admin-react/invoices'
                             icon={<ReceiptOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
@@ -146,21 +146,21 @@ const Sidebar = () => {
                         </Typography>
                         <Item
                             title='Profile Form'
-                            to='/form'
+                            to='/proyecto-admin-react/form'
                             icon={<PersonOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item
                             title='Calendar'
-                            to='/calendar'
+                            to='/proyecto-admin-react/calendar'
                             icon={<CalendarTodayOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item
                             title='FAQ Page'
-                            to='/faq'
+                            to='/proyecto-admin-react/faq'
                             icon={<HelpOutlineOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
@@ -170,28 +170,28 @@ const Sidebar = () => {
                         </Typography>
                         <Item
                             title='Bar Chart'
-                            to='/bar'
+                            to='/proyecto-admin-react/bar'
                             icon={<BarChartOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item
                             title='Pie Chart'
-                            to='/pie'
+                            to='/proyecto-admin-react/pie'
                             icon={<PieChartOutlineOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item
                             title='Line Chart'
-                            to='/line'
+                            to='/proyecto-admin-react/line'
                             icon={<TimelineOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
                         <Item
                             title='Geography Chart'
-                            to='/geography'
+                            to='/proyecto-admin-react/geography'
                             icon={<MapOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
