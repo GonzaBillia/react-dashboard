@@ -1,6 +1,6 @@
 import { ColorModeContext, useMode } from './theme'
 import {CssBaseline, ThemeProvider} from '@mui/material'
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route, BrowserRouter} from 'react-router-dom'
 import Topbar from './scenes/global/Topbar'
 import Sidebar from './scenes/global/Sidebar'
 import Dashboard from './scenes/dashboard/Dashboard'
@@ -21,6 +21,7 @@ function app() {
   const [theme, colorMode] = useMode()
 
   return (
+    <BrowserRouter>
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
@@ -45,6 +46,7 @@ function app() {
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
+    </BrowserRouter>
   )
 }
 
