@@ -21,7 +21,6 @@ function app() {
   const [theme, colorMode] = useMode()
 
   return (
-    <BrowserRouter>
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
@@ -46,7 +45,6 @@ function app() {
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
-    </BrowserRouter>
   )
 }
 
